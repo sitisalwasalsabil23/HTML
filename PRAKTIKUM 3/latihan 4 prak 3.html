@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="csslatihan4.css">
+</head>
+<body>
+    <h1>Data Mahasiswa</h1>
+
+    <p>
+        <a href="#">Lihat Informasi Akademik</a>
+    </p>
+
+    <h3>1. Daftar Mata Kuliah</h3>
+    <ul>
+        <li>Pemrograman Web</li>
+        <li>Basis Data</li>
+        <li>Jaringan Komputer</li>
+    </ul>
+
+    <h3>2. Nilai Mahasiswa</h3>
+    <table>
+        <tr>
+            <th>Mata Kuliah</th>
+            <th>Nilai</th>
+        </tr>
+        <tr>
+            <td>Pemrograman Web</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Basis Data</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Jaringan Komputer</td>
+            <td>A</td>
+        </tr>
+    </table>
+
+    <h3>3. Jadwal Kuliah</h3>
+    <table>
+        <tr>
+            <th>Hari</th>
+            <th>Mata Kuliah</th>
+            <th>Waktu</th>
+        </tr>
+        <tr>
+            <td>Senin</td>
+            <td>Pemrograman Web</td>
+            <td>08.00 - 10.30</td>
+        </tr>
+        <tr>
+            <td>Selasa</td>
+            <td>Basis Data</td>
+            <td>10.00 - 12.30</td>
+        </tr>
+        <tr>
+            <td>Rabu</td>
+            <td>Jaringan Komputer</td>
+            <td>08.00 - 10.30</td>
+        </tr>
+    </table>
+
+    <h3>4. Form Data Mahasiswa</h3>
+    <form>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Masukkan nama">
+
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" placeholder="Masukkan NIM">
+
+        <label for="prodi">Program Studi</label>
+        <select id="prodi">
+            <option>Teknik Komputer</option>
+            <option>PTIK</option>
+        </select>
+
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" placeholder="Masukkan alamat"></textarea>
+
+        <button type="submit">Simpan</button>
+    </form>
+</body>
+</html>
