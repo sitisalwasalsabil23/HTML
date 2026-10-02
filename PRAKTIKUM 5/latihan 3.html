@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 3 - Perulangan dan Function</title>
+</head>
+<body>
+    <h2>Daftar Nilai</h2>
+    <p id="hasil"></p>
+
+    <script>
+        function tampilkanNilai(nilai) {
+            return "Nilai mahasiswa: " + nilai;
+        }
+
+        let dataNilai = [80, 85, 90];
+        let hasil = "";
+
+        for (let i = 0; i < dataNilai.length; i++) {
+            hasil += tampilkanNilai(dataNilai[i]) + "<br>";
+        }
+
+        document.getElementById("hasil").innerHTML = hasil;
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 2 - Percabangan</title>
+</head>
+<body>
+    <h2>Hasil Kelulusan</h2>
+    <p id="hasil"></p>
+
+    <script>
+        let nilai = 78;
+        let keterangan;
+
+        if (nilai >= 75) {
+            keterangan = "Lulus";
+        } else {
+            keterangan = "Tidak Lulus";
+        }
+
+        document.getElementById("hasil").textContent = 
+            "Nilai: " + nilai + " - " + keterangan;
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 5 - Form dan Validasi</title>
+</head>
+<body>
+    <h2>Form Data Mahasiswa</h2>
+    <form id="formMahasiswa">
+        <label>Nama: </label>
+        <input type="text" id="nama">
+        <button type="submit">Kirim</button>
+    </form>
+    <p id="pesan"></p>
+
+    <script>
+        const form = document.getElementById("formMahasiswa");
+        const nama = document.getElementById("nama");
+        const pesan = document.getElementById("pesan");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (nama.value === "") {
+                pesan.textContent = "Nama harus diisi.";
+            } else {
+                pesan.textContent = "Data berhasil dikirim. Nama: " + nama.value;
+            }
+        });
+    </script>
+</body>
+</html>

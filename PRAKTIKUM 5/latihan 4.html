@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 4 - DOM dan Event</title>
+</head>
+<body>
+    <h2>Interaksi JavaScript</h2>
+    <button id="tombol">Klik Saya</button>
+    <p id="pesan">Belum ada tindakan.</p>
+
+    <script>
+        const tombol = document.getElementById("tombol");
+        const pesan = document.getElementById("pesan");
+
+        tombol.addEventListener("click", function() {
+            pesan.textContent = "Tombol telah diklik!";
+        });
+    </script>
+</body>
+</html>
